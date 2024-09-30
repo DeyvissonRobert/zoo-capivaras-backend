@@ -22,6 +22,15 @@ exports.create = (newCapivara, callback) => {
     });
 };
 
-
+exports.update = (id, updatedCapivara, callback) => {
+    const sql = 'UPDATE capivaras SET ? WHERE id = ?';
+    db.query(sql, [updatedCapivara, id], (err, results) => {
+        if (err) {
+            callback(err, null);
+        } else {
+            callback(null, results);
+        }
+    });
+};
 
 
