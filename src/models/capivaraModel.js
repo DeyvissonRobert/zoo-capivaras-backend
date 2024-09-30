@@ -33,4 +33,13 @@ exports.update = (id, updatedCapivara, callback) => {
     });
 };
 
-
+exports.delete = (id, callback) => {
+    const sql = 'DELETE FROM capivaras WHERE id = ?';
+    db.query(sql, [id], (err, results) => {
+        if (err) {
+            callback(err, null);
+        } else {
+            callback(null, results);
+        }
+    });
+};
