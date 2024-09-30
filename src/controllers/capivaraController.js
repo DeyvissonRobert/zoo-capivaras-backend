@@ -10,3 +10,17 @@ exports.getAllCapivaras = (req, res) => {
     });
 };
 
+exports.createCapivara = (req, res) => {
+    const newCapivara = req.body;
+    capivaraModel.create(newCapivara, (err) => {
+        if (err) {
+            res.status(500).json({ message: 'Erro ao adicionar capivara' });
+        } else {
+            res.status(201).json({ message: 'Capivara adicionada com sucesso' });
+        }
+    });
+};
+
+
+
+
