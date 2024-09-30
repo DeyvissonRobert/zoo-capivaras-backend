@@ -21,6 +21,16 @@ exports.createCapivara = (req, res) => {
     });
 };
 
-
+exports.updateCapivara = (req, res) => {
+    const id = req.params.id;
+    const updatedCapivara = req.body;
+    capivaraModel.update(id, updatedCapivara, (err) => {
+        if (err) {
+            res.status(500).json({ message: 'Erro ao atualizar capivara' });
+        } else {
+            res.status(200).json({ message: 'Capivara atualizada com sucesso' });
+        }
+    });
+};
 
 
