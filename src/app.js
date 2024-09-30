@@ -1,9 +1,10 @@
 const express = require('express');
+const cors = require('cors'); 
 const capivaraController = require('./controllers/capivaraController');
 
 const app = express();
 
-
+app.use(cors());
 app.use(express.json());
 
 app.get('/capivaras', capivaraController.getAllCapivaras);
