@@ -11,3 +11,17 @@ exports.getAll = (callback) => {
     });
 };
 
+exports.create = (newCapivara, callback) => {
+    const sql = 'INSERT INTO capivaras SET ?';
+    db.query(sql, newCapivara, (err, results) => {
+        if (err) {
+            callback(err, null);
+        } else {
+            callback(null, results);
+        }
+    });
+};
+
+
+
+
