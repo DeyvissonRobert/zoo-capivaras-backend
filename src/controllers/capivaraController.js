@@ -33,4 +33,13 @@ exports.updateCapivara = (req, res) => {
     });
 };
 
-
+exports.deleteCapivara = (req, res) => {
+    const id = req.params.id;
+    capivaraModel.delete(id, (err) => {
+        if (err) {
+            res.status(500).json({ message: 'Erro ao deletar capivara' });
+        } else {
+            res.status(200).json({ message: 'Capivara deletada com sucesso' });
+        }
+    });
+};
