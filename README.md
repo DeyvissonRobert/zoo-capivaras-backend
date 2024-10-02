@@ -104,6 +104,8 @@ Configure as variáveis de ambiente no arquivo .env com os dados de conexão do 
     observacoes TEXT
   );
 
+## Front-End do Projeto
+O link para o repositório do back-end pode ser encontrado  <a href="https://github.com/DeyvissonRobert/zoo-capivaras-frontend" > aqui </a>.
 
 ## Estrutura do Projeto
  ```sh
