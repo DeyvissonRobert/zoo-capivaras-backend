@@ -1,4 +1,4 @@
-# Gerenciamento de Usuários com Node.js, Express, Cors e Prisma
+# Zoo Capivaras - Backend
 Este projeto é a parte backend da aplicação Zoo Capivaras, construída para gerenciar informações de capivaras, como nome, idade, peso, status de saúde, habitat, comportamento, dieta e observações. O backend fornece uma API REST interativa que se comunica com o frontend e um banco de dados MySQL para armazenar os dados.
 
 ## Tecnologias Utilizadas
