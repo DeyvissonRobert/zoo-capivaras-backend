@@ -108,15 +108,18 @@ Configure as variáveis de ambiente no arquivo .env com os dados de conexão do 
 O link para o repositório do back-end pode ser encontrado  <a href="https://github.com/DeyvissonRobert/zoo-capivaras-frontend" > aqui </a>.
 
 ## Estrutura do Projeto
- ```sh
-/
-├── src/
-│   └── app.js          # Código principal do servidor
-├── database/
-│   └── connection.js   # Conexão com o banco de dados MySQL
-├── controllers/
-│   └── capivaraController.js # Lógica de negócios para as capivaras
-├── .env                # Variáveis de ambiente
-├── package.json        # Dependências e scripts do npm
-└── README.md           # Documentação do projeto
+    ```sh
+      /
+      ├── src/
+      │   └── app.js          # Código principal do servidor
+      ├── database/
+      │   └── connection.js   # Conexão com o banco de dados MySQL
+      ├── controllers/
+      │   └── capivaraController.js # Lógica de negócios para as capivaras
+      ├── .env                # Variáveis de ambiente
+      ├── package.json        # Dependências e scripts do npm
+      └── README.md           # Documentação do projeto
 
+ > [!IMPORTANT]
+ > Tentei, tentei mas não consegui fazer o depoy no vercel a tempo!
+   https://zoo-capivaras-backend.vercel.app/
